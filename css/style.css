@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'futurabookc';
+    src: url(/fonts/futurabookc.woff2);
+}@font-face {
+    font-family: 'proxima_nova_regular';
+    src: url(/fonts/proxima_nova_regular.woff2);
+}
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.body{
+    line-height: 122.8%;
+    color: #fff;
+    max-width: 1920px;
+}
+.header{
+    padding-top: 54px;
+    /* position: absolute; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    max-height: 33px;
+    color: #fff;
+}
+.container{
+    max-width: 1301px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 33px;
+}
+
+.menu-lists{
+
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    font-family: 'futurabookc';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+.phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'futurabookc';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+.phone__img{
+    padding-right: 9px;
+}
+
+.header-content{
+    background-image: url(/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* position: relative; */
+}
+
+.header-content__inner{
+    position: absolute;
+    max-height: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 199px;
+    column-gap: 53px;
+}
+
+.content-left{
+    width: 847px;
+}
+.content-left h1{
+    text-transform: uppercase;
+    font-family: 'futurabookc';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70.23px;
+    line-height: 99.8%;
+    padding-bottom: 5px;
+}
+.content-left span{
+    text-transform: lowercase;
+    color: #969AF7;
+}
+.content-left p{
+    font-family: 'futurabookc';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 129.8%;
+    color: #969AF7;
+    width: 750px;
+    padding-bottom: 37px;
+}
+
+
+.advantage{
+    position: relative;
+  }
+.advantage__inner{
+     background: linear-gradient(90deg, #969AF7 1.34%, rgba(150, 154, 247, 0) 96.66%);
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+.advantage__inner ul{
+    margin-left: 31px;
+    padding: 25px 10px;
+    z-index: 5;
+}
+.advantage__inner li{
+    list-style-image: url(/images/check.png);
+    z-index: 5;
+    padding: 5px 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 129.8%;
+    color: #FFFFFF;
+}
+
+
+
+.content-right{
+    width: 380px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+}
+
+.h3{
+    background-color: #6A32B4;
+    padding: 32px 60px 24px 60px;
+    /* padding-bottom: 24px; */
+    border-radius: 7px 7px 0 0;
+}
+.content-right h3{
+    text-align: center;
+    font-family: 'futurabookc';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 27px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-form form{
+    padding: 31px 40px 36px 40px;
+    font-family: 'futurabookc';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 128.91%;
+    color: #626366;
+}
+label{
+    margin-left: 20px;
+    margin-bottom: 6px;
+}
+input{
+    width: 300px;
+    height: 56px;
+    background: #F5F3FF;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+input::placeholder {
+    color: #BCBFC4;
+    font-size: 20px;
+    padding: 21px 145px 16px 20px;
+  }
+
+.btn-form{
+    width: 300px;
+    height: 56px;
+    border: none;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    background: #FFA500;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'futurabookc';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+
+.under-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 311px;
+    padding-left: 40px;
+    padding-bottom: 36px;
+}
+.under-form img{
+    width: 16px;
+    height: 16px;
+}
+
+.under-form p{
+    font-family: 'futurabookc';
+    font-style: normal;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C0C0C0;
+    padding-left: 10px;
+}
