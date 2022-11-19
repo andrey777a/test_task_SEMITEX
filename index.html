@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Добавляем стили из CDN -->
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css">
+    <!-- Добавляем тему по умолчанию из CDN -->
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+    <!-- <link rel="stylesheet" href="js/main.js"> -->
     <title>SEMITEX</title>
 </head>
 <body>
@@ -45,7 +50,7 @@
                     <a class="phone__img" href="#">
                         <img class="" src="/images/phone.png" alt="">
                     </a>
-                    <a href="tel:+78123135845">+7 (812) 313-58-45</a>
+                    <a href="tel:+78123135845">+7 (812) <b>313-58-45</b> </a>
                 </div>
             </nav>
         </div>
@@ -53,7 +58,7 @@
 
     <main class="main">
         <section class="header-content">
-                <img src="/images/bgAdd.svg" alt="">
+                <img class="header-content__bg" src="/images/bgAdd.svg" alt="">
                 <div class="container">
                     <div class="header-content__inner">
                         
@@ -62,7 +67,7 @@
                                 Оптовые поставки <span>электронных компонентов</span> ИЗ КИТАЯ день в день
                             </h1>
                             <p>Комплексные поставки электронных компонентов и оборудования. Подберем аналоги популярных брендов из Европы в условиях санкций.</p>
-                            <div class="advantage">
+                            <div class="advantage-header">
                                 <div class="advantage__inner">
                                     <ul>
                                         <li>Отсрочка платежей для постоянных клиентов</li>
@@ -102,10 +107,91 @@
         <section class="advantages">
             <div class="container">
                 <div class="advantages__inner">
-                    
+                    <div class="adventages__text">
+                        <div class="adventages__text--title">
+                            <h3>Почему с нами выгодно</h3>
+                        </div>
+                        <div class="adventages__text--text">
+                            <p>С 1996 года мы занимаемся оптовыми поставками электронных компонентов от ведущих производителей из Европы </br> и Азии для Российских потребителей.</p>
+                        </div>
+                    </div>
+                    <div class="advantages__items">
+                        <div class="advantages__item">
+                            <img src="/images/1 item.svg" alt="">
+                            <div class="advantages__item--title">Качественная продукция</div>
+                            <div class="advantages__item--subtitle">Все наши товары сертифицированы и имеют сопроводительную документацию.</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="/images/2 item.svg" alt="">
+                            <div class="advantages__item--title">Индивидуальный подход</div>
+                            <div class="advantages__item--subtitle">Возможность изготовления компонентов специально для вас на заводах-изготовителя.</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="/images/3 item.svg" alt="">
+                            <div class="advantages__item--title">Бесплатная доставка</div>
+                            <div class="advantages__item--subtitle">При наличии товара на складе и заказе от 10 000 рублей, доставим бесплатно по Москве и СПБ в течение 2х часов.</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="/images/4 item.svg" alt="">
+                            <div class="advantages__item--title">Подбираем аналоги</div>
+                            <div class="advantages__item--subtitle">Поможем подобрать аналоги популярных европейских брендов в условиях санкций.</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="/images/5 item.svg" alt="">
+                            <div class="advantages__item--title">Резервный запас компонентов</div>
+                            <div class="advantages__item--subtitle">Хранение товара на наших складах для постоянных клиентов.</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="/images/6 item.svg" alt="">
+                            <div class="advantages__item--title">Гибкая система оплаты</div>
+                            <div class="advantages__item--subtitle">Отсрочка платежей для постоянных клиентов.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <div class="wrapper">
+            <div class="slider">
+                <div class="slider__item">
+                    <div class="stars">
+                        <img src="/img/star-black.png" alt="">
+                        <img src="/img/star-black.png" alt="">
+                        <img src="/img/star-black.png" alt="">
+                        <img src="/img/star-white.png" alt="">
+                        <img src="/img/star-white.png" alt="">
+                    </div>
+                    <p class="item__text1" >We had an amazing stay at the Guest House!</p>
+                    <p class="item__text2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    <div class="last-text">
+                        <img src="/img/orange-vertickal.png" alt="">
+                        <p class="last-text1" >Nate Davidsson</p>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="stars">
+                        <img src="/img/star-black.png" alt="">
+                        <img src="/img/star-black.png" alt="">
+                        <img src="/img/star-black.png" alt="">
+                        <img src="/img/star-black.png" alt="">
+                        <img src="/img/star-white.png" alt="">
+                    </div>
+                    <p class="item__text1" >Beautiful little hideaway.</p>
+                    <p class="item__text2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.</p>
+                    <div class="last-text">
+                        <img src="/img/orange-vertickal.png" alt="">
+                        <p class="last-text1" >Laura Paulie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/slick/slick.min.js" ></script>
+    <script src="/js/main.js" ></script>
 </body>
 </html>
