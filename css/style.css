@@ -23,6 +23,7 @@ a{
     line-height: 122.8%;
     color: #fff;
     max-width: 1920px;
+    overflow-x: hidden;
 }
 .header{
     padding-top: 54px;
@@ -32,6 +33,7 @@ a{
     right: 0;
     max-height: 33px;
     color: #fff;
+    z-index: 100;
 }
 .container{
     max-width: 1301px;
@@ -70,17 +72,16 @@ a{
 }
 
 .header-content{
-    background: url(/images/bg.jpg);
+    height: 850px;
+    background-image: url(/images/bgAdd.svg), url(/images/bg.svg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     color: #fff;
-    /* position: relative; */
 }
 .header-content__bg{
     max-width: 1920px;
     max-height: 850px;
-    /* top: 0; */
     background-size: 100%;
 }
 
@@ -207,7 +208,7 @@ input::placeholder {
     
   }
 
-.btn-form{
+.btn{
     width: 300px;
     height: 56px;
     border: none;
@@ -277,7 +278,6 @@ input::placeholder {
 }
 
 .adventages__text--text{
-    /* max-width: 1051px; */
     font-family: 'futurabookc';
     font-style: normal;
     font-weight: 400;
@@ -330,7 +330,7 @@ input::placeholder {
 }
 
 .advantages__item--subtitle{
-    font-family: 'FuturaBookC';
+    font-family: 'futurabookc';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -349,5 +349,316 @@ input::placeholder {
 /* СКАЧАТЬ ШРИФТЫ !!!!!!!!!!!!!!! */
 /* СКАЧАТЬ ШРИФТЫ !!!!!!!!!!!!!!! */
 /* СКАЧАТЬ ШРИФТЫ !!!!!!!!!!!!!!! */
+
+
+.production{
+    margin-top: 130px;
+    /* margin-bottom: 72px; */
+    padding: 155px 0;
+    height: 728px;
+    background-image: url(/images/bg_slider2.svg), url(/images/bg_slider1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+    z-index: 5;
+    position: relative;
+
+}
+.production__title{
+    font-family: 'FuturaFuturisC';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 99.8%;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.slider{
+    /* height: 174px; */
+    position: relative;
+    width: 100%;
+    /* max-height: 174px; */
+
+}
+.slider__item{
+
+    max-width: 242px;
+    min-height: 100%;
+    width: 242px;
+    max-height: 174px;
+    margin: 7px;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    
+}
+
+.slick-track {
+    display: flex !important;
+    min-height: 174px;
+}
+.slick-slide {
+    height: inherit !important;
+}
+.slider__item img{
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.production__text{
+    padding-top: 42px;
+    font-family: 'futurabookc';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+
+/* ___________advantages____END_________________________ */
+
+
+/* _____________sctheme__START_________________________ */
+
+
+.sctheme{
+    background-image: url(/images/bg-sctheme.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 154px;
+    margin-top: -65px;
+    color: #ffffff;
+    z-index: 4;
+    position: relative;
+    width: 100%;
+}
+
+.sctheme__title{
+    font-family: 'FuturaFuturisC'; /* изменить font */
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 99.8%;
+    text-align: center;
+    color: #111111;
+    padding-top: 135px;
+    margin-bottom: 24px;
+}
+
+
+.sctheme__subtitle{
+    font-family: 'FuturaBookC';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 46px;
+}
+
+.sctheme__items{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 30px;
+
+}
+
+.sctheme__item{
+    background-image: url(/images/itemBgStep.svg), url(/images/step3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 439px;
+    height: 269px;
+    display: flex;
+    flex-direction: column;
+}
+.sctheme__item-1{
+    background-image: url(/images/itemBgStep.svg), url(/images/step1.svg);
+}
+.sctheme__item-2{
+    background-image: url(/images/itemBgStep.svg), url(/images/step2.svg);
+}
+.sctheme__item-3{
+    background-image: url(/images/itemBgStep.svg), url(/images/step3.svg);
+    width: 413px;
+    height: 298px;
+}
+.sctheme__item-4{
+    background-image: url(/images/Mask\ group.svg), url(/images/step6.svg);
+    max-width: 413px;
+}
+.sctheme__item-5{
+    background-image: url(/images/Mask\ group.svg), url(/images/step5.svg);
+    width: 442px;
+    margin-left: -27px;
+
+}
+.sctheme__item-6{
+    background-image: url(/images/Mask\ group.svg), url(/images/step4.svg);
+    width: 442px;
+    height: 268px;
+    margin-left: -27px;
+}
+
+.number-title{
+    display: flex;
+    align-items: center;
+    padding-left: 38px;
+    padding-top: 39px;
+    padding-bottom: 24px;
+    font-family: 'FuturaFuturisC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.number-title p{
+    padding-right: 16px;
+    font-family: 'FuturaFuturisC';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+/* identical to box height */
+
+
+color: #969AF7;
+}
+
+.sctheme__discription{
+    padding-left: 90px;
+    max-width: 370px;
+    font-family: 'futurabookc';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+}
+
+.sctheme-btn{
+    margin-left: 487px;
+}
+
+
+/* _____________sctheme__END_________________________ */
+
+
+.faq{
+    height: 1271px;
+    background-image: url(/images/bg-questionsItem.svg), url(/images/bg-questions.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1920px;
+    /* background-size: 100%; */
+    margin-top: -58px;
+    padding-top: 144px;
+}
+
+.faq-item{
+    width: 1280px;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.faq-title{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 30px 53px;
+    color: #333333;
+    background: linear-gradient(180deg, #FFFFFF 50.57%, #BDC0FF 100%);
+    
+    box-shadow: 0px 0px 50px -10px rgba(22, 126, 194, 0.2);
+    border-radius: 10px;
+    height: 87px;
+    transition: .2s
+}
+
+.faq-title:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(/images/arrow.svg), url(/images/Ellipse\ 6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 40px;
+    height: 40px;
+    right: 37px;
+    margin-top: -20px;
+    z-index: 1;
+    /* border-style: solid; */
+    /* border-width: 8px 5px 0 5px; */
+}
+
+
+.faq-title:hover{
+    background: linear-gradient(180deg, #969AF7 0%, #686EEC 100%);
+    color: #ffffff;
+    /* z-index: 3; */
+}
+
+.faq-input{
+    width: 0;
+    height: 0;
+    appearance: none;
+    position: absolute;
+}
+
+.faq-input:checked ~ .faq-title{
+    background: linear-gradient(180deg, #969AF7 0%, #686EEC 100%);
+
+}
+.faq-input:checked ~ .faq-text{
+    display: block;
+}
+
+.faq-text{
+    display: none;
+    background-color: #ffffff;
+    padding: 39px 53px;
+    margin-top: -13px;
+    margin-left: 20px;
+    min-width: 1184px;
+    min-width: 1260px;
+    color: #333333;
+    font-family: 'FuturaBookC';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+    /* z-index: 1; */
+}
+
+.faq-text p{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.footer{
+    background: #333333;
+    height: 177px;
+    padding-top: 72px;
+    color: #ffffff;
+}
+
+.footer button{
+    background: #969AF7;
+}
+
 
 
